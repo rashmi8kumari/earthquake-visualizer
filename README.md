@@ -9,7 +9,6 @@ Built with **React**, **Bootstrap**, and **React-Leaflet** for a smooth and resp
 👉 [View Deployed App](https://your-vercel-deployment-link.vercel.app)
 
 ---
-
 ## 🧠 Project Overview
 
 **Goal:**  
