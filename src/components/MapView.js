@@ -34,3 +34,5 @@ const MapView = ({ earthquakes }) => {
 };
 
 export default MapView;
+
+

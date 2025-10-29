@@ -35,3 +35,5 @@ const FilterPanel = ({ magnitude, setMagnitude, timeRange, setTimeRange }) => {
 };
 
 export default FilterPanel;
+
+
