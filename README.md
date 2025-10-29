@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# 🌍 Earthquake Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive web application that visualizes recent earthquake activities around the world using real-time data from the **USGS Earthquake API**.  
+Built with **React**, **Bootstrap**, and **React-Leaflet** for a smooth and responsive user experience.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Demo
+👉 [View Deployed App](https://your-vercel-deployment-link.vercel.app)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🧠 Project Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Goal:**  
+Help users (especially geography students or researchers) visualize global seismic patterns in an interactive way — showing where and when earthquakes have recently occurred.
 
-### `npm test`
+**Key Features:**
+- 🌎 Interactive world map with earthquake markers
+- ⚙️ Filter by magnitude and time range (last day, week, or month)
+- 🧭 Click any marker to view details (location, magnitude, date & time)
+- 🔁 Real-time data fetched from USGS API
+- 🧱 Built with React (CRA), Bootstrap for UI, and React-Leaflet for maps
+- 📱 Fully responsive on mobile and desktop
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧰 Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Tool | Purpose |
+|------|----------|
+| **React (CRA)** | UI framework |
+| **Bootstrap** | Styling & responsive layout |
+| **React-Leaflet** | Map integration |
+| **Leaflet** | Core map rendering engine |
+| **USGS Earthquake API** | Live earthquake data feed |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🌐 API Reference
 
-### `npm run eject`
+**Endpoint:**
+https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+yaml
+Copy code
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Available Time Ranges:**
+| Time Range | Endpoint |
+|-------------|-----------|
+| Last 24 Hours | `all_day.geojson` |
+| Last 7 Days | `all_week.geojson` |
+| Last 30 Days | `all_month.geojson` |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ⚙️ Setup Instructions
 
-## Learn More
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/earthquake-visualizer.git
+cd earthquake-visualizer
+2️⃣ Install Dependencies
+bash
+Copy code
+npm install
+3️⃣ Start the Application
+bash
+Copy code
+npm start
+Visit: http://localhost:3000
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🧩 Folder Structure
+pgsql
+Copy code
+src/
+ ├── components/
+ │     ├── MapView.js
+ │     ├── FilterPanel.js
+ │     └── Header.js
+ ├── hooks/
+ │     └── useEarthquakeData.js
+ ├── App.js
+ ├── index.js
+ ├── index.css
+💡 Features Explanation
+Feature	Description
+Interactive Map	Displays all recent earthquakes as markers
+Filter by Magnitude	Show only earthquakes above a selected magnitude
+Filter by Time	Choose between 24 hours, 7 days, or 30 days
+Detailed Popup	Click on markers to see magnitude, location, and time
+Error Handling	Gracefully handles network or API errors
+Responsive Design	Looks great on mobile, tablet, and desktop
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🧑‍💻 Author
+Rashmi Kumari
+Full Stack Developer | React | Node.js | MERN Stack
+📧 [rashmi8shahi@gmail.com]
+🌐 LinkedIn Profile : https://www.linkedin.com/in/rashmi-kumari-4b171726b/
 
-### Code Splitting
+🏁 License
+This project is open source and available under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
