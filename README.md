@@ -42,9 +42,6 @@ Help users (especially geography students or researchers) visualize global seism
 **Endpoint:**
 https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson
 
-yaml
-Copy code
-
 **Available Time Ranges:**
 | Time Range | Endpoint |
 |-------------|-----------|
@@ -57,22 +54,19 @@ Copy code
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone the Repository
-```bash
+
 git clone https://github.com/your-username/earthquake-visualizer.git
 cd earthquake-visualizer
 2️⃣ Install Dependencies
-bash
-Copy code
+
 npm install
 3️⃣ Start the Application
-bash
-Copy code
+
 npm start
 Visit: http://localhost:3000
 
 🧩 Folder Structure
-pgsql
-Copy code
+
 src/
  ├── components/
  │     ├── MapView.js
